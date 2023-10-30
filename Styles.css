@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* You can change the font-family */
+    background-color: bisque; /* Set your desired background color */
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.site-content {
+    flex: 1; /* Make the content area expand to fill the available space */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+hr {
+    border-color: rgb(85, 85, 85);
+    margin: 0;
+}
+
+.nav-container {
+    background-color: rgb(85, 85, 85);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-links a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 15px;
+    text-decoration: wavy;
+}
+
+nav h1 {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.hero {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1.5em;
+    text-align: center;
+    background-color: bisque;
+}
+
+.hero h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1.5em;
+    font-size: 2em;
+    padding: 0;
+
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #808080;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+    
+.button:hover {
+    background-color: #0056b3;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling if the content overflows */
+    padding: 20px; /* Adjust the padding as needed */
+}
+
+.gallery-item {
+    flex: 0 0 auto; /* Prevent items from growing or shrinking */
+    margin-right: 20px; /* Adjust the margin between items as needed */
+}
+
+.gallery-item:last-child {
+    margin-right: 0; /* Remove margin from the last item to prevent extra spacing */
+}
+
+.gallery-item img {
+    max-width: 100%; /* Ensure images don't exceed their container width */
+    height: auto; /* Maintain aspect ratio of images */
+}
+
+footer {
+    background-color: rgb(85, 85, 85);
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Center-align the content within the footer */
+}
+
+.footer-content {
+    /* Add styles for the footer content as needed */
+}
+
+footer h3 {
+    text-decoration: underline;
+}
+
+
+.footer-columns {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
