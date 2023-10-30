@@ -1,16 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* You can change the font-family */
-    background-color: bisque; /* Set your desired background color */
-    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    font-family: Arial, sans-serif; 
+    background-color: bisque; 
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
 }
 
 .site-content {
-    flex: 1; /* Make the content area expand to fill the available space */
-    padding: 20px; /* Adjust padding as needed */
+    flex: 1;
+    padding: 20px; 
 }
 
 hr {
@@ -58,7 +58,6 @@ nav h1 {
     padding: 1.5em;
     font-size: 2em;
     padding: 0;
-
 }
 
 .button {
@@ -79,33 +78,33 @@ nav h1 {
 
 .gallery {
     display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling if the content overflows */
-    padding: 20px; /* Adjust the padding as needed */
+    overflow-x: auto;
+    padding: 20px;
 }
 
 .gallery-item {
-    flex: 0 0 auto; /* Prevent items from growing or shrinking */
-    margin-right: 20px; /* Adjust the margin between items as needed */
+    flex: 0 0 auto; 
+    margin-right: 20px; 
 }
 
 .gallery-item:last-child {
-    margin-right: 0; /* Remove margin from the last item to prevent extra spacing */
+    margin-right: 0; 
 }
 
 .gallery-item img {
-    max-width: 100%; /* Ensure images don't exceed their container width */
-    height: auto; /* Maintain aspect ratio of images */
+    max-width: 100%;
+    height: auto; 
 }
 
 footer {
     background-color: rgb(85, 85, 85);
     color: #fff;
     padding: 20px;
-    text-align: center; /* Center-align the content within the footer */
+    text-align: center; 
 }
 
 .footer-content {
-    /* Add styles for the footer content as needed */
+
 }
 
 footer h3 {
