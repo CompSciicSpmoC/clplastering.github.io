@@ -1,5 +1,5 @@
-/* Reset some default margin and padding */
-body, h1, h2, h3, p {
+/* Reset margin and padding for the body and html elements */
+html, body {
     margin: 0;
     padding: 0;
 }
@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-x: hidden;
 }
 
 .site-content {
@@ -30,7 +30,7 @@ hr {
     align-items: center;
     justify-content: space-between;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 100%; /* Make the nav bar the same width as the footer */
+    width: 100%;
 }
 
 .nav-links a {
@@ -38,7 +38,7 @@ hr {
     text-align: center;
     padding: 14px 20px;
     font-size: 15px;
-    text-decoration: none; /* Removed wavy text decoration */
+    text-decoration: none;
 }
 
 nav h1 {
@@ -105,7 +105,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; /* Make the footer the same width as the nav bar */
+    width: 100%;
 }
 
 .footer-content {
