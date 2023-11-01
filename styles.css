@@ -18,6 +18,7 @@ hr {
 }
 
 .nav-container {
+    width: 100%;
     background-color: rgb(85, 85, 85);
     overflow: hidden;
     display: flex;
@@ -104,6 +105,8 @@ footer {
     color: #fff;
     text-align: center;
     background-color: rgb(85, 85, 85);
+    padding: 20px;
+    width: 100%;
 }
 
 .footer-content {
