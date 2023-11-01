@@ -76,22 +76,29 @@ nav h1 {
 
 .gallery {
     display: flex;
-    overflow-x: auto;
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .gallery-item {
-    flex: 0 0 auto;
-    margin-right: 20px;
-}
-
-.gallery-item:last-child {
-    margin-right: 0;
+    margin: 10px;
+    text-align: center;
 }
 
 .gallery-item img {
     max-width: 100%;
     height: auto;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-item p {
+    font-size: 14px;
+    margin: 5px 0;
 }
 
 footer {
