@@ -1,22 +1,16 @@
-/* Reset some default margin and padding */
-body, h1, h2, h3, p {
+body {
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: bisque;
+    font-family: Arial, sans-serif; 
+    background-color: bisque; 
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the body takes the full viewport height */
 }
 
 .site-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    flex: 1; /* Allow site content to expand and take up remaining vertical space */
+    flex: 1;
+    padding: 20px; 
 }
 
 hr {
@@ -25,11 +19,14 @@ hr {
 }
 
 .nav-container {
-    width: 100%;
     background-color: rgb(85, 85, 85);
+    overflow: hidden;
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
+    height: 100%;
+    width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -38,25 +35,29 @@ hr {
     text-align: center;
     padding: 14px 20px;
     font-size: 15px;
-    text-decoration: none;
+    text-decoration: wavy;
 }
 
 nav h1 {
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
+    text-decoration: none;
     font-size: 17px;
 }
 
 .hero {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1.5em;
     text-align: center;
     background-color: bisque;
-    padding: 2em;
 }
 
 .hero h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1.5em;
     font-size: 2em;
+    padding: 0;
 }
 
 .button {
@@ -70,69 +71,65 @@ nav h1 {
     cursor: pointer;
     font-size: 16px;
 }
-
+    
 .button:hover {
     background-color: #0056b3;
 }
 
 .gallery {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    overflow-x: auto;
+    padding: 20px;
 }
 
 .gallery-item {
-    margin: 10px;
-    text-align: center;
+    flex: 0 0 auto; 
+    margin-right: 20px; 
+}
+
+.gallery-item:last-child {
+    margin-right: 0; 
 }
 
 .gallery-item img {
     max-width: 100%;
-    height: auto;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.1);
-}
-
-.gallery-item p {
-    font-size: 14px;
-    margin: 5px 0;
+    height: auto; 
 }
 
 footer {
-    background-color: rgb(85, 85, 85);
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center the footer content horizontally */
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
     padding: 20px;
+    text-align: center; 
+    background-color: rgb(85, 85, 85);
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex; /* To create a flex container */
+    justify-content: center; /* Center the content horizontally */
+}
+
+footer h3 {
+    text-decoration: underline;
 }
 
 .footer-columns {
     display: flex;
-    align-items: center;
+    justify-content: center; /* Center the columns horizontally */
 }
 
 .footer-column {
+    flex: 1;
     padding: 0 20px;
+    text-align: center;
 }
 
 ul {
     list-style: none;
     padding: 0;
+    text-decoration: none;
 }
 
 ul li {
     margin-bottom: 10px;
+    text-decoration: none;
 }
