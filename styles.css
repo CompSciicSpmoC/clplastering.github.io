@@ -101,28 +101,26 @@ footer {
     padding: 20px;
     text-align: center; 
     background-color: rgb(85, 85, 85);
-    justify-content: center;
 }
 
 .footer-content {
-
+    display: flex; /* To create a flex container */
+    justify-content: center; /* Center the content horizontally */
 }
 
 footer h3 {
     text-decoration: underline;
 }
 
-
 .footer-columns {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the columns horizontally */
 }
 
 .footer-column {
     flex: 1;
     padding: 0 20px;
     text-align: center;
-    justify-content: center;
 }
 
 ul {
