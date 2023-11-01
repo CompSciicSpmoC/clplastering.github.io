@@ -7,12 +7,16 @@ body, h1, h2, h3, p {
 body {
     font-family: Arial, sans-serif;
     background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes the full viewport height */
 }
 
 .site-content {
-    max-width: 1200px; /* Limit content width for readability on larger screens */
-    margin: 0 auto; /* Center content on the page */
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
+    flex: 1; /* Allow site content to expand and take up remaining vertical space */
 }
 
 hr {
@@ -34,7 +38,7 @@ hr {
     text-align: center;
     padding: 14px 20px;
     font-size: 15px;
-    text-decoration: none; /* Removed wavy text decoration */
+    text-decoration: none;
 }
 
 nav h1 {
@@ -48,7 +52,7 @@ nav h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     background-color: bisque;
-    padding: 2em; /* Adjusted padding for better spacing */
+    padding: 2em;
 }
 
 .hero h1 {
@@ -102,14 +106,17 @@ footer {
     background-color: rgb(85, 85, 85);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* Center the footer content horizontally */
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
 }
 
 .footer-content {
-    padding: 20px;
-    max-width: 1200px; /* Limit content width for neatness */
-    margin: 0 auto; /* Center content on the page */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .footer-columns {
