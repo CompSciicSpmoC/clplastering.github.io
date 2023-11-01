@@ -1,14 +1,17 @@
-body {
+/* Reset some default margin and padding */
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
+}
+
+body {
     font-family: Arial, sans-serif;
     background-color: bisque;
-    display: flex;
-    flex-direction: column;
 }
 
 .site-content {
-    flex: 1;
+    max-width: 1200px; /* Limit content width for readability on larger screens */
+    margin: 0 auto; /* Center content on the page */
     padding: 20px;
 }
 
@@ -20,10 +23,8 @@ hr {
 .nav-container {
     width: 100%;
     background-color: rgb(85, 85, 85);
-    overflow: hidden;
     display: flex;
     align-items: center;
-    flex-direction: row;
     justify-content: space-between;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -33,29 +34,25 @@ hr {
     text-align: center;
     padding: 14px 20px;
     font-size: 15px;
-    text-decoration: wavy;
+    text-decoration: none; /* Removed wavy text decoration */
 }
 
 nav h1 {
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
     font-size: 17px;
 }
 
 .hero {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 1.5em;
     text-align: center;
     background-color: bisque;
+    padding: 2em; /* Adjusted padding for better spacing */
 }
 
 .hero h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 1.5em;
     font-size: 2em;
-    padding: 0;
 }
 
 .button {
@@ -69,7 +66,7 @@ nav h1 {
     cursor: pointer;
     font-size: 16px;
 }
-    
+
 .button:hover {
     background-color: #0056b3;
 }
@@ -105,17 +102,19 @@ footer {
     background-color: rgb(85, 85, 85);
     display: flex;
     align-items: center;
-    flex-direction: row;
     justify-content: space-between;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .footer-content {
     padding: 20px;
+    max-width: 1200px; /* Limit content width for neatness */
+    margin: 0 auto; /* Center content on the page */
 }
 
 .footer-columns {
     display: flex;
+    align-items: center;
 }
 
 .footer-column {
@@ -125,10 +124,8 @@ footer {
 ul {
     list-style: none;
     padding: 0;
-    text-decoration: none;
 }
 
 ul li {
     margin-bottom: 10px;
-    text-decoration: none;
 }
