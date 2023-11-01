@@ -1,15 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: bisque;
+    font-family: Arial, sans-serif; 
+    background-color: bisque; 
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
 }
 
 .site-content {
     flex: 1;
-    padding: 20px;
+    padding: 20px; 
 }
 
 hr {
@@ -24,11 +25,26 @@ hr {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%; /* Remove height: 100% to allow content to adjust */
+    height: 100%;
+    width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Keep your existing styles for .nav-links and nav h1 */
+.nav-links a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 15px;
+    text-decoration: wavy;
+}
+
+nav h1 {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
 
 .hero {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -37,7 +53,28 @@ hr {
     background-color: bisque;
 }
 
-/* Keep your existing styles for .hero h1 and .button */
+.hero h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1.5em;
+    font-size: 2em;
+    padding: 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #808080;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+    
+.button:hover {
+    background-color: #0056b3;
+}
 
 .gallery {
     display: flex;
@@ -46,23 +83,23 @@ hr {
 }
 
 .gallery-item {
-    flex: 0 0 auto;
-    margin-right: 20px;
+    flex: 0 0 auto; 
+    margin-right: 20px; 
 }
 
 .gallery-item:last-child {
-    margin-right: 0;
+    margin-right: 0; 
 }
 
 .gallery-item img {
     max-width: 100%;
-    height: auto;
+    height: auto; 
 }
 
 footer {
     color: #fff;
     padding: 20px;
-    text-align: center;
+    text-align: center; 
     background-color: rgb(85, 85, 85);
 }
 
@@ -71,10 +108,11 @@ footer {
     flex-direction: column;
     align-items: center; /* Center the content vertically */
     justify-content: center; /* Center the content horizontally */
+    min-height: 100vh; /* To center it within the viewport */
     background-color: rgb(85, 85, 85);
     color: #fff;
     text-align: center;
-    padding: 10px; /* Reduce the padding for a more compact footer */
+    padding: 20px;
 }
 
 footer h3 {
