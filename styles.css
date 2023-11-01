@@ -24,7 +24,6 @@ hr {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%; /* Set the width explicitly to 100% */
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -103,7 +102,6 @@ nav h1 {
 
 footer {
     color: #fff;
-    padding: 20px;
     text-align: center;
     background-color: rgb(85, 85, 85);
 }
@@ -117,7 +115,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
-    width: 100%; /* Set the width explicitly to 100% to match the navigation bar */
 }
 
 footer h3 {
